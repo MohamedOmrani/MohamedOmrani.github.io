@@ -1,0 +1,148 @@
+.form-control.ng-valid[required],
+.ng-valid.required {
+  border-left: 5px solid #26a52c;
+}
+
+.form-control.ng-invalid:not(form) {
+  border-left: 5px solid #f52320;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 10px;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+button[type="submit"] {
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+.btn-delete,
+.btn-update {
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 12px 20px;
+  width: 100%;
+}
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  align-content: center;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .col-25,
+  .col-75 {
+    width: 100%;
+    margin-top: 0;
+  }
+  button[type="submit"] {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+.alert {
+  background-color: #fed3d3;
+  color: #820000;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+table tr {
+  border: 1px solid #ddd;
+  padding: 5px;
+}
+table th,
+table div {
+  padding: 20px;
+  text-align: center;
+}
+table td {
+  padding: 10px;
+  text-align: center;
+}
+table th {
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 800px) {
+  table {
+    border: 0;
+  }
+  table thead {
+    display: none;
+  }
+  table tr {
+    border-bottom: 2px solid #ddd;
+    display: block;
+    margin-bottom: 10px;
+  }
+  table td {
+    border-bottom: 1px dotted #ccc;
+    display: block;
+    font-size: 13px;
+    text-align: right;
+  }
+  table td:last-child {
+    border-bottom: 0;
+  }
+  table td:before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+}

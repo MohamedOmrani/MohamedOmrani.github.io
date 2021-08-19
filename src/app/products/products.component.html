@@ -1,0 +1,92 @@
+<h2>Product Management</h2>
+<div class="container">
+  <form #productForm="ngForm">
+    <div class="form-group row">
+      <div class="col-25">
+        <label for="description">Description</label>
+      </div>
+      <div class="col-75">
+        <input type="text" class="form-control" name="description" #description="ngModel"
+          [(ngModel)]="myProduct.description" placeholder="Your description" required />
+      </div>
+    </div>
+    <div class="form-group row">
+      <div class="col-25">
+        <label for="type">Type</label>
+      </div>
+      <div class="col-75">
+        <input type="text" class="form-control" name="type" #type="ngModel" [(ngModel)]="myProduct.type"
+          placeholder="Your type" required />
+      </div>
+    </div>
+    <div class="form-group row">
+      <div class="col-25">
+        <label for="price">Price</label>
+      </div>
+      <div class="col-75">
+        <input type="text" [(ngModel)]="myProduct.price" #price="ngModel" class="form-control" name="price" required
+          placeholder="Your price" />
+      </div>
+    </div>
+    <div class="form-group row">
+      <div class="col-25">
+        <label for="quantity">Quantity</label>
+      </div>
+      <div class="col-75">
+        <input type="number" [(ngModel)]="myProduct.quantity" #quantity="ngModel" class="form-control" name="quantity"
+          required placeholder="Your quantity" number />
+      </div>
+    </div>
+    <div class="form-group row">
+      <button *ngIf="!editForm" [disabled]="productForm.invalid" style="background-color: #1c5df5;"
+        (click)="addProduct(productForm.value)" type="submit">
+        Add Product
+      </button>
+      <button *ngIf="editForm" (click)="updateProduct()" style="background-color: rgb(179, 162, 10);" type="submit">
+        Update Product
+      </button>
+    </div>
+  </form>
+</div>
+
+<input class="form-control" (keyup)="searchProducts()" [(ngModel)]="searchText" type="text" placeholder="Search.."
+  aria-label="Search" />
+
+<h2>Products List</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Price</th>
+      <th>Quantity</th>
+      <th>Delete</th>
+      <th>Update</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let product of resultProducts">
+      <td data-label="Description">{{ product.description }}</td>
+      <td data-label="Type">{{ product.type }}</td>
+      <td data-label="Price">{{ product.price }}</td>
+      <td data-label="Quantity">{{ product.quantity }}</td>
+      <td>
+        <button (click)="deleteProduct(product.id)" class="btn-delete" style="background-color: rgb(255, 10, 10);">
+          Delete
+        </button>
+      </td>
+      <td>
+        <button (click)="editProduct(product)" class="btn-update" style="background-color: rgb(179, 162, 10);">
+          Update
+        </button>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="6">
+        <div *ngIf="resultProducts.length == 0" class="alert alert-danger">
+          Table is empty ...
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
