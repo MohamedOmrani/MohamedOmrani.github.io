@@ -8,8 +8,6 @@ In this project we use **Angular** as a **front-office** and **json-server** as 
 4. Run the backend **json-server** : `npm run json:serve` 
 5. Run the frontend **Angular** : `ng serve --open` or `ng s -o`
 6. ## Some screen to project 
-### before users load 
-![download](https://user-images.githubusercontent.com/69158314/130077196-f3306552-598c-4e0d-a587-042eba17d531.png)
 ### before Add Product 
 ![b](https://user-images.githubusercontent.com/69158314/130079077-09d73862-aef4-4434-940c-b8ce2f397924.png)
 ### After Add Product 
