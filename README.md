@@ -10,6 +10,14 @@ In this project we use **Angular** as a **front-office** and **json-server** as 
 6. ## Some screen to project 
 ### before users load 
 ![download](https://user-images.githubusercontent.com/69158314/130077196-f3306552-598c-4e0d-a587-042eba17d531.png)
+### before Add Product 
+![b](https://user-images.githubusercontent.com/69158314/130079077-09d73862-aef4-4434-940c-b8ce2f397924.png)
+![c](https://user-images.githubusercontent.com/69158314/130079099-e14fbeab-de87-415f-b7f5-edf594a225e8.png)
+### before Update Product 
+![d](https://user-images.githubusercontent.com/69158314/130079148-bdd72e02-c2a7-41c8-ac54-ea9f718b3f98.png)
+### before Delete Product 
+![e](https://user-images.githubusercontent.com/69158314/130079319-f1cd3810-7f6b-43e2-a03f-aa1800cfc0ae.png)
+
 
 
 
