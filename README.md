@@ -8,7 +8,7 @@ In this project we use **Angular** as a **front-office** and **json-server** as 
 4. Run the backend **json-server** : `npm run json:serve` 
 5. Run the frontend **Angular** : `ng serve --open` or `ng s -o`
 6. Déployer sur les pages GitHub : `https://mohamedomrani.github.io/`
-8. ## Some screen to project 
+## Some screen to project 
 ### before Add Product 
 ![b](https://user-images.githubusercontent.com/69158314/130079077-09d73862-aef4-4434-940c-b8ce2f397924.png)
 ### After Add Product 
@@ -17,6 +17,8 @@ In this project we use **Angular** as a **front-office** and **json-server** as 
 ![d](https://user-images.githubusercontent.com/69158314/130079148-bdd72e02-c2a7-41c8-ac54-ea9f718b3f98.png)
 ### After selecting Product to Delete 
 ![e](https://user-images.githubusercontent.com/69158314/130079319-f1cd3810-7f6b-43e2-a03f-aa1800cfc0ae.png)
+## Responsiveness of screen elements
+![f](https://user-images.githubusercontent.com/69158314/130082149-d4467733-b2be-4469-b9e4-a67fdbce2b69.png)
 
 
 
